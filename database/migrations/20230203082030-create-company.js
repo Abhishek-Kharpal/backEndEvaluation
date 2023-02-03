@@ -9,14 +9,23 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      name: {
+        type: Sequelize.STRING
+      },
+      ceo: {
+        type: Sequelize.STRING
+      },
+      score: {
+        type: Sequelize.DOUBLE
+      },
+      address: {
+        type: Sequelize.STRING
+      },
       companyId: {
         type: Sequelize.STRING
       },
-      sectorName: {
+      description: {
         type: Sequelize.STRING
-      },
-      rank: {
-        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
@@ -30,5 +39,5 @@ module.exports = {
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('companies');
-  }
+  },
 };
