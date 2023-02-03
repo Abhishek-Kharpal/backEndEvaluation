@@ -13,7 +13,9 @@ const getCsv = async (urlLink) => {
       const lines = data.split('\n');
       lines.forEach((line) => {
         const row = line.split(',');
-        csvData.push(row);
+        if(row[0]!=='company_id'){
+          csvData.push(row);
+        }
       });
       return csvData;
     } 
