@@ -50,8 +50,10 @@ exports.getPerformanceIndex = async (sector,id)=>{
       companyId: id
     }
   });
-  const instanceOfCompany = {
-    ...finalCompany.dataValues
+  const requiredResponse = {
+    id: finalCompany.companyID,
+    name: finalCompany.name,
+    score: score
   };
-  return instanceOfCompany;
+  return requiredResponse;
 };
