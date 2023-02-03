@@ -10,10 +10,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       companyId: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       sectorName: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       rank: {
         type: Sequelize.INTEGER

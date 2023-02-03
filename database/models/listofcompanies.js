@@ -14,8 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   listOfCompanies.init({
-    companyId: DataTypes.STRING,
-    sectorName: DataTypes.STRING,
+    companyId: DataTypes.TEXT,
+    sectorName: DataTypes.TEXT,
     rank: DataTypes.INTEGER
   }, {
     sequelize,
