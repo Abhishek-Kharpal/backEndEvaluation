@@ -1,4 +1,4 @@
-describe('CompaniesService',()=>{
+describe('utilService',()=>{
 
 
   describe('saveCompanies',()=>{
@@ -14,13 +14,7 @@ describe('CompaniesService',()=>{
   });
 
   describe('getPerformanceIndex',()=>{
-    it('should return the performance index of a company',()=>{
-
-    });
-  });
-
-  describe('saveCompanyScore',()=>{
-    it('should return the company with its score',()=>{
+    it('should return company object with the performance index of the company',()=>{
 
     });
   });
